@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+
+<p>Score Judge</p>
+
+<input type="number" id="input"><br><br>
+<button type="button" onclick="judge()">Judge</button>
+<br>
+<output id="result">
+
+<script>
+
+function judge()
+{
+	var score;
+	score=document.getElementById("input").value;
+    if(parseInt(score)>=60)
+    {
+    	document.getElementById("result").innerHTML="及格";
+    }
+    else
+    {
+		document.getElementById("result").innerHTML="不及格";
+    }
+}
+
+</script>
+
+</body>
+</html>
