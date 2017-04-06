@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+
+<p>Computer</p>
+
+<input type="number" id="input1"><br><br>
+<input type="number" id="input2"><br>
+<button type="button" onclick="plus()">Plus</button>
+<button type="button" onclick="subtraction()">subtraction</button>
+<button type="button" onclick="multiplication()">multiplication</button>
+<button type="button" onclick="division()">division</button>
+<button type="button" onclick="c()">c</button>
+<br>
+<p>Answer:</p>
+<output id="result">
+
+<script>
+function division()
+{
+	var d1,d2;
+    d1=document.getElementById("input1").value;
+    d2=document.getElementById("input2").value;
+    d1=parseInt(d1);
+    d2=parseInt(d2);
+    document.getElementById("result").innerHTML=d1/d2;
+}
+
+function multiplication()
+{
+	var m1,m2;
+    m1=document.getElementById("input1").value;
+    m2=document.getElementById("input2").value;
+    m1=parseInt(m1);
+    m2=parseInt(m2);
+    document.getElementById("result").innerHTML=m1*m2;
+}
+
+function subtraction()
+{
+	var s1,s2;
+    s1=document.getElementById("input1").value;
+    s2=document.getElementById("input2").value;
+    s1=parseInt(s1);
+    s2=parseInt(s2);
+    document.getElementById("result").innerHTML=s1-s2;
+}
+
+function plus() 
+{
+    var p1,p2;
+    p1=document.getElementById("input1").value;
+    p2=document.getElementById("input2").value;
+    p1=parseInt(p1);
+    p2=parseInt(p2);
+    document.getElementById("result").innerHTML=p1+p2;
+}
+
+function c()
+{
+	document.getElementById("input1").value="";
+    document.getElementById("input2").value="";
+	document.getElementById("result").innerHTML=0;
+}
+
+</script>
+
+</body>
+</html>
